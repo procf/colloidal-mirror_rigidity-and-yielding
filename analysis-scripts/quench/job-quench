@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH -J quench
+#SBATCH -n 1 -N 1
+##SBATCH -t 24:00:00
+#SBATCH -t 4-24:00:00
+#SBATCH -p long
+#SBATCH -o %A.out
+#SBATCH -e %A.err
+
+
+# add path-to-hoomd-basic: 
+module load miniconda3/24.11.1
+module load OpenMPI/4.1.6
+module load cuda/12.1.1
+module load OpenBLAS/0.3.29
+source /projects/props/Rob/software/hoomd4.2.1-modgpu/hoomdmodgpu4.2.1-venv/bin/activate
+
+
+start_time=$(date +%s)
+
+python sim-quench-nohoomd.py
+
+end_time=$(date +%s)
+
+elapsed_time=$((end_time - start_time))
+echo "Wall time: $elapsed_time seconds"
