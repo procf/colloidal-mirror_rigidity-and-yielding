@@ -5,6 +5,7 @@ Simulations can be run using the [sim-scripts](./sim-scripts) and the DPDMorse e
 
 To confirm that a system is at equilibrium before gelation, use [analysis-eq](./analysis-scripts/analysis-eq)
 
+Shear simulation script is available for the [bimodal system](./sim-scripts/bi/shear-const-0.5-allinit-bi-DPD) 
 
 ## What to expect
 For systems of ~10,000 colloidal particles the following scripts are available:
