@@ -1,4 +1,6 @@
 # Bimodal colloids highlight the structural mirror of rigidity percolation and yielding
+Results from this project are [available on arXiV](https://doi.org/10.48550/arXiv.2607.22901) and are currently under review.
+
 This is a simulation and analysis pipeline for identifying the mechanically relevant structures that produce elastic response and yielding behavior in colloidal depletion gels.
 
 Simulations can be run using the [sim-scripts](./sim-scripts) and the DPDMorse extension for HOOMD-blue v4.2.1, available as [hoomd4.2.1-mod](https://github.com/procf/hoomd4.2.1-mod).
