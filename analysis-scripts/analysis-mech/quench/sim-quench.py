@@ -351,9 +351,9 @@ if __name__ == '__main__':
         "/projects/props/Rob/colloids/bimodal/r2-0/DPD/L70/phi20/potential-morse-bysize/12kT/kappa60/Gelation-lastframe.gsd",
     ]
     psf_files = [
-        "../viz/100-0/100-0_psfs_standard/all_bonds.psf",
-        "../viz/50-50/50-50_psfs_standard/all_bonds.psf",
-        "../viz/0-100/0-100_psfs_standard/all_bonds.psf",
+        "../../analysis-topology/viz/100-0/100-0_psfs_standard/all_bonds.psf",
+        "../../analysis-topology/viz/50-50/50-50_psfs_standard/all_bonds.psf",
+        "../../analysis-topology/viz/0-100/0-100_psfs_standard/all_bonds.psf",
     ]
     labels = ['small', 'bi', 'large']
 

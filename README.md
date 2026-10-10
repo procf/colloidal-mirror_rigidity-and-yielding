@@ -12,15 +12,24 @@ Shear simulation script is available for the [bimodal system](./sim-scripts/bi-c
 ## What to expect
 For systems of ~10,000 colloidal particles the following scripts are available:
 
-- Construct a network representation of colloid-colloid bonds
-- Identify tetrahedral structures
-- Calculate edge-betweenness centrality (EBC) for all contacts and isolate edges with the top 10% of values
-- Gaussian Mixture Model (GMM) based mesoscale clustering and classification of cluster-cluster contacts
+[analysis-GMM](./analysis-scripts/analysis-GMM)
+- Gaussian Mixture Model (GMM) based mesoscale clustering
 
+[analysis-topology](./analysis-scripts/analysis-topology)
+- Construct a network representation of colloid-colloid bonds
+- Identify tetrahedral structures and their hierarchical motifs (NOTE: motif data not used in this study)
+- Calculate edge-betweenness centrality (EBC) for all contacts and isolate edges with the top 10% of values
+- Classify cluster-cluster bridges as "singly-connected bridges" (SB) or "multi-connected bridges" (MB)
+- In a bimodal system, save the bond-type composition of tetrahedral motifs, bridges, and the EBC>=P90 backbone
+- Save ECDF and CCDF data for the EBC values of different structures
+- Save data comparing all three structural classes (tetrahedra, bridges, high-EBC backbone)
+
+[analysis-mech](./analysis-scripts/analysis-mech)
 - Quench the system to remove negative-curvature artifacts
 - Calculate the relative contribution of different bonds to the affine (Born) contribution to the static shear modulus
 - Calculate the relative localization of the non-affine response using a per-bond harmonic relaxation energy
 
+[analysis-yielding](./analysis-scripts/analysis-yielding)
 - Classify bond breaks that occur during shear
 - Calculate per-particle non-affine motion using $\langle D^2_{min} \rangle$
 - Measure bond orientation from the fabric tensor
